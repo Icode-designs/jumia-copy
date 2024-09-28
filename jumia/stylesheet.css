@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dedede;
+}
+
+
+/*----------badges-----------*/
+.sell{
+    display: flex;
+    align-items: center;
+    color: orange;
+    font-size: 12px;
+    max-width: none;
+}
+
+.sell p{
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.sell img{
+    width: 12px;
+    margin: 9px;
+    margin-left: 90px;
+}
+
+
+
+.sell .logo{
+    height: 10px;
+    width: auto;
+    margin: auto;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 350px
+}
+
+.sell .jumialogo{
+    height: 10px;
+    width: auto;
+}
+
+.sell .mylogo{
+    width: 25px;
+    margin: 0; 
+}
+
+.sell .mylogo:hover{
+    filter: invert(46%) sepia(81%) saturate(3233%) hue-rotate(165deg) brightness(100%) contrast(101%);
+    animation: logo-spin infinite 20s linear;
+}
+
+
+/*--------------navigation bar----------------*/
+.container{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    height: 74px;
+    align-items: center;
+    margin-left: 0;
+    max-width: none;
+    box-shadow: 1px 1px 4px 4px rgba(0,0,0,0.1)
+}
+
+.container img{
+    margin-left: 90px;
+    height: 33px;
+}
+
+.container #search-icon{
+    background: none;
+    color: #A1A1A1;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    position: absolute;
+    margin-left: 360px;
+}
+
+.container #search-icon:hover{
+    background: none;
+    border: none;
+}
+
+.container input{
+    margin-left: 75px;
+    border: 1px solid #A1A1A1;
+    height: 40px;
+    width: 38%;
+    box-shadow: none;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #A1A1A1;
+}
+
+.container button{
+    border: none;
+    background-color: orange;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 6%;
+    font-weight: bold;
+    box-shadow: 1px 1px 4px 4px rgba(0,0,0,0.1)
+}
+
+.container button:hover{
+    background-color: darkorange;
+}
+
+.nav-btn{
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+
+.nav-btn ul{
+    list-style-type: none;
+    margin: auto;
+    margin-top: 13px;
+    padding: 0;
+}
+
+.nav-btn ul li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-btn ul li:hover{
+    color: orange;
+}
+
+.nav-btn ul li .icon{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.nav-btn ul li .angle-down{
+    margin-left: 10px;
+}
+
+
+/*--------------header section--------------*/
+
+.head-container{
+    display: flex;
+    margin: 0 90px;
+}
+
+.head-container .side-bar{
+    background-color: #fff; 
+    margin-right: 15px;
+    width: 200px;
+    box-shadow: 1px 1px 4px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.head-container .side-bar ul{
+    list-style-type: none;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.side-bar .side-icon{
+    padding: 5px;
+    font-size: 17px;
+    width: 10px;
+    margin-right: 5px
+}
+
+.side-bar ul li p{
+    margin: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.side-bar ul li p:hover{
+    color: orange;
+}
+
+.sub-container{
+    position: absolute;
+    z-index: 9;
+    width: 53%;
+    display: none;
+    cursor: pointer;
+    flex-wrap: wrap;
+    background: #fff;
+    height: 56.5%;
+    margin-left: 203px;
+}
+
+.sub-category{
+    display: flex;
+    background: #fff;
+    z-index: 10;
+    width: 100%;
+    height: 56.5%;
+    cursor: pointer;
+}
+
+.s{
+    margin: 9px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.s ul{
+    list-style-type: none;
+    padding-left: 0;
+    cursor: pointer;
+    overflow-wrap: normal;
+}
+
+.s ul li{
+    padding: 0;
+    margin: 0;
+    padding-right: 80px;
+    color: #A1A1A1;
+    cursor: pointer;
+}
+
+.s  h5{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.s hr{
+    padding: 0;
+    margin: 3px
+}
+
+.s ul li:hover,
+.s  h5:hover {
+    color: orange;
+}
+
+
+/*--------------slider---------------*/
+.head-container .slider{
+    width: 60%;
+    margin-right: 15px;
+    box-shadow: 1px 1px 4px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.carousel-indicators button{
+    border-radius: 100%;
+    max-width: 10px;
+}
+
+.carousel-item img{
+    height: 384px;
+}
+
+.carousel-control-container1 .carousel-control-prev, 
+.carousel-control-container2 .carousel-control-next{
+    background-color: #8C8C8C;
+    height: 40px;
+    width: 40px;
+    margin: auto 20px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.carousel-control-container1:hover .carousel-control-prev,
+.carousel-control-container2:hover .carousel-control-next {
+    opacity: 100%;
+}
+
+
+
+/*---------------------contact and advert--------------------*/
+.links {
+    display: block; /* Use flexbox to align items in a row */
+    justify-content: flex-start; /* Align items to the start (left) */
+    gap: 20px; /* Optional: add space between items */
+    background: #fff;
+    width: 250px;
+    margin: 0;
+    box-shadow: 1px 1px 4px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.jumiaSell {
+    display: flex; /* Use flexbox for each item */
+    align-items: center; /* Center align items vertically */
+    gap: 10px; /* Space between image and text */
+}
+
+.jumiaSell img {
+    max-width: 50px; /* Set a max width for the images */
+    height: auto; /* Maintain aspect ratio of images */
+}
+
+.jumiaSell .text {
+    margin-top: 5px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column; /* Stack text elements vertically */
+    text-align: left; /* Align text to the left */
+}
+
+.jumiaSell .text h5{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px
+}
+
+.advert-img{
+    margin-top: 13px;
+    width: 250px;
+    box-shadow: 1px 1px 4px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.advert-img img{
+    width: 100%;
+    height: 199px;
+}
+
+/*-----------------handy category--------------*/
+
+.handy-cat-container{
+    margin: 15px 89px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFF;
+    border-radius: 7px;
+}
+
+.handy-category{
+    width: 185px;
+    background: #fff;
+    margin: 5px;
+    display: block;
+}
+
+.handy-category img{
+    width: 185px;
+    border-radius: 5px;
+}
+
+.handy-category p{
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+}
+
+.handy-category:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 1px 4px 4px rgba(0,0,0,0.1);
+}
+
+
+
+.recommended{
+    display: block;
+    background: #FFF;
+    border-radius: 7px;
+    margin: 15px 89px;
+}
+
+.recom-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recom-text p, a{
+    margin: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.recommended .handy-cat-container{
+    margin: 0;
+}
+
+.recom-text p{
+    font-size: 20px;
+}
+
+.recom-text a{
+    text-decoration: none;
+    color: orange;
+    font-size: 14px;
+}
+
+.recommended .handy-cat-container p{
+    text-align: left;
+    margin: 3px
+}
+
+.recommended .handy-cat-container .price{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.recommended .handy-cat-container .slash-price{
+    font-size: 12px;
+    color: #707070;
+    text-decoration: line-through;
+    margin-top: 0;
+}
+
+.count-down{
+    display: flex;
+    align-items: center;
+}
+
+.launch-time{
+    display: flex;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+    display: flex;
+    margin: 0 5px;
+}
+
+.launch-time div p{
+    font-size: 25px;
+    margin: 20px 0;
+    margin-bottom: 5px;
+    
+}
+
+.flash{
+    background: red;
+    color: #fff;
+    font-size: 25px;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 45px;
+}
+
+.flash .fa{
+    color: orange;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner img{
+    padding: 10px;
+    padding-right: 5px;
+}
+
+.banner .banImg{
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.banner img:hover{
+    transform: scale(1.03);
+}
+
+.phoneDeal p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.phoneDeal .handy-category p{
+    text-align: center;
+    margin: 10px;
+}
+
+.deals, .limited {
+    background-color: aquamarine;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
